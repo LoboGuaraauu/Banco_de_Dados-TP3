@@ -1,0 +1,223 @@
+{
+  "q02": {
+    "nos": [
+      "Sort",
+      "Hash Join",
+      "Seq Scan",
+      "Hash",
+      "Nested Loop",
+      "Bitmap Heap Scan",
+      "Bitmap Index Scan",
+      "Index Scan",
+      "Aggregate"
+    ],
+    "custo_estimado": 4294.85,
+    "linhas_estimadas": 1,
+    "linhas_reais": 45,
+    "buffers": {
+      "hit": 20010,
+      "read": 61
+    },
+    "tempo_execucao_ms": 172.079,
+    "acesso_dominante": "Index Scan",
+    "relacao_dominante": "partsupp",
+    "juncoes": [
+      "Hash Join",
+      "Nested Loop",
+      "Nested Loop",
+      "Hash Join",
+      "Nested Loop",
+      "Nested Loop",
+      "Nested Loop"
+    ],
+    "tempo_planejamento_ms": 11.322
+  },
+  "q03": {
+    "nos": [
+      "Sort",
+      "Aggregate",
+      "Gather",
+      "Nested Loop",
+      "Hash Join",
+      "Seq Scan",
+      "Hash",
+      "Index Scan"
+    ],
+    "custo_estimado": 22246.1,
+    "linhas_estimadas": 31117,
+    "linhas_reais": 1095,
+    "buffers": {
+      "hit": 53679,
+      "read": 8682
+    },
+    "tempo_execucao_ms": 701.493,
+    "acesso_dominante": "Index Scan",
+    "relacao_dominante": "lineitem",
+    "juncoes": [
+      "Nested Loop",
+      "Hash Join"
+    ],
+    "tempo_planejamento_ms": 7.27
+  },
+  "q08": {
+    "nos": [
+      "Aggregate",
+      "Gather Merge",
+      "Sort",
+      "Hash Join",
+      "Nested Loop",
+      "Seq Scan",
+      "Hash",
+      "Bitmap Heap Scan",
+      "Bitmap Index Scan",
+      "Index Scan"
+    ],
+    "custo_estimado": 15109.24,
+    "linhas_estimadas": 302,
+    "linhas_reais": 2,
+    "buffers": {
+      "hit": 43073,
+      "read": 1714
+    },
+    "tempo_execucao_ms": 76.49,
+    "acesso_dominante": "Index Scan",
+    "relacao_dominante": "lineitem",
+    "juncoes": [
+      "Hash Join",
+      "Nested Loop",
+      "Hash Join",
+      "Nested Loop",
+      "Hash Join",
+      "Nested Loop",
+      "Hash Join"
+    ],
+    "tempo_planejamento_ms": 2.123
+  },
+  "q09": {
+    "nos": [
+      "Aggregate",
+      "Sort",
+      "Gather",
+      "Hash Join",
+      "Seq Scan",
+      "Hash",
+      "Nested Loop",
+      "Index Scan"
+    ],
+    "custo_estimado": 15158.55,
+    "linhas_estimadas": 30329,
+    "linhas_reais": 175,
+    "buffers": {
+      "hit": 43263,
+      "read": 6363
+    },
+    "tempo_execucao_ms": 346.286,
+    "acesso_dominante": "Index Scan",
+    "relacao_dominante": "lineitem",
+    "juncoes": [
+      "Hash Join",
+      "Nested Loop",
+      "Hash Join",
+      "Hash Join",
+      "Hash Join"
+    ],
+    "tempo_planejamento_ms": 2.719
+  },
+  "q10": {
+    "nos": [
+      "Sort",
+      "Aggregate",
+      "Gather Merge",
+      "Hash Join",
+      "Seq Scan",
+      "Hash"
+    ],
+    "custo_estimado": 21515.98,
+    "linhas_estimadas": 5602,
+    "linhas_reais": 3841,
+    "buffers": {
+      "hit": 13210,
+      "read": 1920
+    },
+    "tempo_execucao_ms": 72.855,
+    "acesso_dominante": "Seq Scan",
+    "relacao_dominante": "lineitem",
+    "juncoes": [
+      "Hash Join",
+      "Hash Join",
+      "Hash Join"
+    ],
+    "tempo_planejamento_ms": 1.185
+  },
+  "q13": {
+    "nos": [
+      "Sort",
+      "Aggregate",
+      "Hash Join",
+      "Seq Scan",
+      "Hash",
+      "Index Only Scan"
+    ],
+    "custo_estimado": 6636.68,
+    "linhas_estimadas": 200,
+    "linhas_reais": 37,
+    "buffers": {
+      "hit": 2655,
+      "read": 39
+    },
+    "tempo_execucao_ms": 654.121,
+    "acesso_dominante": "Index Only Scan",
+    "relacao_dominante": "customer",
+    "juncoes": [
+      "Hash Join"
+    ],
+    "tempo_planejamento_ms": 0.346
+  },
+  "q14": {
+    "nos": [
+      "Aggregate",
+      "Gather",
+      "Hash Join",
+      "Seq Scan",
+      "Hash"
+    ],
+    "custo_estimado": 16972.61,
+    "linhas_estimadas": 1,
+    "linhas_reais": 1,
+    "buffers": {
+      "hit": 10835,
+      "read": 1823
+    },
+    "tempo_execucao_ms": 297.485,
+    "acesso_dominante": "Seq Scan",
+    "relacao_dominante": "lineitem",
+    "juncoes": [
+      "Hash Join"
+    ],
+    "tempo_planejamento_ms": 1.338
+  },
+  "q16": {
+    "nos": [
+      "Sort",
+      "Aggregate",
+      "Hash Join",
+      "Index Only Scan",
+      "Seq Scan",
+      "Hash"
+    ],
+    "custo_estimado": 3952.83,
+    "linhas_estimadas": 1594,
+    "linhas_reais": 2786,
+    "buffers": {
+      "hit": 464,
+      "read": 220
+    },
+    "tempo_execucao_ms": 147.458,
+    "acesso_dominante": "Index Only Scan",
+    "relacao_dominante": "partsupp",
+    "juncoes": [
+      "Hash Join"
+    ],
+    "tempo_planejamento_ms": 2.788
+  }
+}

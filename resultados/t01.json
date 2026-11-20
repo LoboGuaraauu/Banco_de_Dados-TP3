@@ -1,0 +1,24 @@
+{
+  "cpu_modelo": "13th Gen Intel(R) Core(TM) i5-13420H",
+  "cpu_nucleos": 12,
+  "ram_mb": 3746,
+  "disco_bytes": 509722226688,
+  "caches": {
+    "L1d": "48K",
+    "L1i": "32K",
+    "L2": "1280K",
+    "L3": "12288K"
+  },
+  "so": "Debian GNU/Linux 13 (trixie)",
+  "kernel": "6.18.33.2-microsoft-standard-WSL2",
+  "postgres": {
+    "server_version": "16.16 (Debian 16.16-1.pgdg13+1)",
+    "block_size": "8192",
+    "shared_buffers": "128MB",
+    "effective_cache_size": "4GB",
+    "seq_page_cost": "1",
+    "random_page_cost": "4",
+    "work_mem": "4MB",
+    "default_statistics_target": "100"
+  }
+}

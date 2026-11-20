@@ -1,0 +1,34 @@
+[
+  {
+    "n": 100000,
+    "valor": 5,
+    "tempo_consulta_ms": 1.965,
+    "no_raiz_consulta": "Bitmap Heap Scan",
+    "tempo_consulta_indice_forcado_ms": 1.85,
+    "tempo_criacao_ms": 54.11315899982583,
+    "tempo_recriacao_ms": 64.46102199697634,
+    "indice": {
+      "paginas": 87,
+      "altura": 1,
+      "niveis": 2,
+      "paginas_folha": 85,
+      "densidade_media_folha": 89.18
+    }
+  },
+  {
+    "n": 1000000,
+    "valor": 5,
+    "tempo_consulta_ms": 29.472,
+    "no_raiz_consulta": "Bitmap Heap Scan",
+    "tempo_consulta_indice_forcado_ms": 22.265,
+    "tempo_criacao_ms": 657.5333460023103,
+    "tempo_recriacao_ms": 664.7324000005028,
+    "indice": {
+      "paginas": 850,
+      "altura": 2,
+      "niveis": 3,
+      "paginas_folha": 843,
+      "densidade_media_folha": 89.91
+    }
+  }
+]

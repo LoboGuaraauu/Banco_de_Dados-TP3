@@ -1,0 +1,39 @@
+{
+  "pequena": {
+    "sql": "SELECT * FROM movie WHERE votes > 35000",
+    "linhas": 6,
+    "nos": [
+      "Index Scan"
+    ],
+    "custo": 8.49,
+    "tempo_ms": 0.079,
+    "buffers": {
+      "shared_hit": 3,
+      "shared_read": 0
+    }
+  },
+  "grande": {
+    "sql": "SELECT * FROM movie WHERE votes > 1000",
+    "linhas": 1516,
+    "nos": [
+      "Seq Scan"
+    ],
+    "custo": 38.05,
+    "tempo_ms": 0.368,
+    "buffers": {
+      "shared_hit": 15,
+      "shared_read": 0
+    }
+  },
+  "limiar_votos_menor_que": 1550,
+  "linhas_no_limiar": 677,
+  "fracao_no_limiar": 0.36713665943600865,
+  "total_linhas": 1844,
+  "passo": 50,
+  "nos_no_limiar": [
+    "Seq Scan"
+  ],
+  "nos_antes_do_limiar": [
+    "Index Scan"
+  ]
+}

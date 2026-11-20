@@ -1,0 +1,78 @@
+{
+  "antes": {
+    "prefixo_like": {
+      "sql": "SELECT * FROM movie WHERE title LIKE 'T%'",
+      "linhas": 119,
+      "nos": [
+        "Seq Scan"
+      ],
+      "custo": 38.05
+    },
+    "prefixo_substr": {
+      "sql": "SELECT * FROM movie WHERE substr(title, 1, 1) = 'T'",
+      "linhas": 119,
+      "nos": [
+        "Seq Scan"
+      ],
+      "custo": 42.66
+    },
+    "sufixo_like": {
+      "sql": "SELECT * FROM movie WHERE title LIKE '%A'",
+      "linhas": 30,
+      "nos": [
+        "Seq Scan"
+      ],
+      "custo": 38.05
+    },
+    "sufixo_reverse": {
+      "sql": "SELECT * FROM movie WHERE reverse(title) LIKE 'A%'",
+      "linhas": 30,
+      "nos": [
+        "Seq Scan"
+      ],
+      "custo": 42.66
+    }
+  },
+  "depois": {
+    "prefixo_like": {
+      "sql": "SELECT * FROM movie WHERE title LIKE 'T%'",
+      "linhas": 119,
+      "nos": [
+        "Bitmap Heap Scan",
+        "Bitmap Index Scan"
+      ],
+      "custo": 22.24
+    },
+    "prefixo_substr": {
+      "sql": "SELECT * FROM movie WHERE substr(title, 1, 1) = 'T'",
+      "linhas": 119,
+      "nos": [
+        "Bitmap Heap Scan",
+        "Bitmap Index Scan"
+      ],
+      "custo": 21.98
+    },
+    "sufixo_like": {
+      "sql": "SELECT * FROM movie WHERE title LIKE '%A'",
+      "linhas": 30,
+      "nos": [
+        "Seq Scan"
+      ],
+      "custo": 38.05
+    },
+    "sufixo_reverse": {
+      "sql": "SELECT * FROM movie WHERE reverse(title) LIKE 'A%'",
+      "linhas": 30,
+      "nos": [
+        "Bitmap Heap Scan",
+        "Bitmap Index Scan"
+      ],
+      "custo": 20.19
+    }
+  },
+  "indices_criados": {
+    "idx_movie_title_pattern": "CREATE INDEX idx_movie_title_pattern ON movie (title text_pattern_ops)",
+    "idx_movie_title_substr": "CREATE INDEX idx_movie_title_substr ON movie (substr(title, 1, 1))",
+    "idx_movie_title_reverse": "CREATE INDEX idx_movie_title_reverse ON movie (reverse(title) text_pattern_ops)"
+  }
+}
