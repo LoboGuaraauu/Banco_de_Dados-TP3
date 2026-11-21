@@ -1,0 +1,38 @@
+{
+  "matricula": "22450967",
+  "sf": 0.1,
+  "tpch_consultas": [
+    2,
+    3,
+    8,
+    9,
+    10,
+    13,
+    14,
+    16
+  ],
+  "qgen_seed": 496064,
+  "t_seed": -0.514287,
+  "t_cardinalidade_v": 10,
+  "fillfactors": [
+    60,
+    80,
+    85,
+    90
+  ],
+  "movie_titulo_alvo": "Pulp Fiction",
+  "movie_votos_baixo": 1000,
+  "movie_votos_alto": 35000,
+  "movie_letra_prefixo": "T",
+  "movie_letra_sufixo": "A",
+  "assentos": 180,
+  "tempo_escolha_s": 0.1,
+  "agentes": [
+    1,
+    2,
+    4,
+    6,
+    8,
+    10
+  ]
+}
